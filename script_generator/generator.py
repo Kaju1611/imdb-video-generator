@@ -53,7 +53,7 @@ def generate_script(movie: MovieData) -> str:
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
             temperature=0.75,
-            max_output_tokens=600,
+            max_output_tokens=16000,
         ),
     )
 

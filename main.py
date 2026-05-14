@@ -41,7 +41,7 @@ def run_pipeline(imdb_url: str, skip_whisper: bool = False) -> str:
 
     print("\n[Step 4/6] Fetching visuals...")
     from visuals.fetcher import fetch_visuals
-    image_paths = fetch_visuals(movie, paths["visuals"], num_images=8)
+    image_paths = fetch_visuals(movie, paths["visuals"], num_images=30)
     print(f"[Step 4/6] {len(image_paths)} images ready")
 
     print("\n[Step 5/6] Generating subtitles...")
